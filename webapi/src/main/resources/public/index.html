@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lança Mentos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="estilo.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div id="buscarContas">    
+                <h1>Contas</h1>
+                <button id="btnBuscarContas" class="btn btn-info">Buscar Contas</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th>Saldo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableContentConta">
+                    </tbody>
+                </table> 
+            </div>
+
+            <div id="addConta">
+                <h1>Adicionar Conta</h1>
+                <form id="formAdd">
+                    <div class="form-group">
+                        <label>Descrição</label>
+                        <input type="text" class="form-control" name="descricaoConta" placeholder="Descrição">
+                    </div>
+                    <div class="form-group">
+                        <label>Saldo</label>
+                        <input type="text" class="form-control" name="saldo" placeholder="Saldo">
+                    </div>
+                    
+                    <input type="button" value="Adicionar Conta" id="btnAdicionarConta" class="btn btn-info"/>
+                </form>
+            </div>
+            
+            <div id="removerConta">
+                <h1>Remover Conta</h1>
+                <form id="formAdd"> 
+                        <input type="button" value="SelecionarConta" id="SelContaRemove" class="btn btn-info"/>
+                        <select name="SelCont" id="SelectCont">
+                        </select>               
+                    <input type="button" value="Remover Conta" id="RemoveConta" class="btn btn-info"/>
+                </form>
+            </div>  
+
+            <div id="atualizarConta">
+                    <h1>Atualizar Conta</h1>
+                    <form id="formAdd">
+                        <div class="form-group">
+                            <input type="button" value="SelecionarConta" id="SelContaAttID" class="btn btn-info"/>
+                            <select name="SelContAtt" id="SelectContAtt"> </select>     
+                        </div>          
+                        <div class="form-group">
+                            <label>Descrição</label>
+                            <input type="text" class="form-control" name="descricaoAtualizadaConta" placeholder="Descrição">
+                        </div>
+                        <div class="form-group">
+                            <label>Valor</label>
+                            <input type="text" class="form-control" name="valorAtualizadoConta" placeholder="Valor">      
+                            <input type="button" value="Atualizar" id="btnAtualizarConta" class="btn btn-info"/>
+                        </div>
+                    </form>
+                </div>
+
+            <div id="listarSaldoContas">
+                <h1>Saldo das Contas</h1>
+                <h3><p  name = "teste" id='saldo' value = 'teste'></p></h3>
+                <input type="button" value="Mostrar" id="btnSaldoContas" class="btn btn-info"/>
+            </div>
+
+            <div id="buscarLancamento">
+                <h1>Lançamentos</h1>
+                <button id="btnBuscar" class="btn btn-info">Buscar</button>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                            <th>Conta</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableContent">
+                    </tbody>
+                </table>
+            </div>   
+
+            <div id="addLancamento">
+                <h1>Adicionar Lançamentos</h1>
+                <form id="formAdd">
+                    <div class="form-group">
+                        <label>Descrição</label>
+                        <input type="text" class="form-control" name="descricao" placeholder="Descrição">
+                    </div>
+                    <div class="form-group">
+                        <label>Valor</label>
+                        <input type="text" class="form-control" name="valor" placeholder="Valor">
+                    </div>
+                    <div class="form-group">
+                        <input type="button" value="SelecionarConta" id="SelContaID" class="btn btn-info"/>
+                                <select name="SelConta" id="SelectConta">
+                                </select>
+                    </div>
+                    
+                    <input type="button" value="Adicionar" id="btnAdicionar" class="btn btn-info"/>
+                </form>
+            </div>
+
+            <!--</form>-->
+            <div id="removerLancamento">
+                <h1>Remover Lancamento</h1>
+                <form id="formAdd"> 
+                        <input type="button" value="SelecionarLancamento" id="SelLancamentoRemove" class="btn btn-info"/>
+                        <select name="SelLancamento" id="SelectLancamento">
+                        </select>               
+                    <input type="button" value="Remover Lancamento" id="RemoveLancamento" class="btn btn-info"/>
+                </form>
+            </div>
+
+            <div id="atualizarLancamento">
+                <h1>Atualizar Lançamento</h1>
+                <form id="formAdd">
+                    <input type="button" value="SelecionarLancamento" id="SelLancamentoAttLan" class="btn btn-info"/>
+                    <select name="SelLancamentoAttLan" id="SelectLancamentoAttLan"></select>      
+                </form>        
+                <form id="formAdd">
+                    <div class="form-group">
+                        <label>Descrição</label>
+                        <input type="text" class="form-control" name="descricaoAtualizada" placeholder="Descrição">
+                    </div>
+                    <div class="form-group">
+                        <label>Valor</label>
+                        <input type="text" class="form-control" name="valorAtualizado" placeholder="Valor">
+                    </div>
+                    <div class="form-group">
+                        <input type="button" value="SelecionarConta" id="SelContaAttLanID" class="btn btn-info"/>
+                            <select name="SelContaAttLan" id="SelectContaAttLan"></select>
+                    </div>        
+                    <input type="button" value="Atualizar" id="btnAtualizarLancamento" class="btn btn-info"/>
+                </form>
+            </div>
+            <div id="transferencia">
+                <h1>Transferência</h1>
+
+                <div class="form-group">
+                        <input type="button" value="SelecionarContaDeEnvio" id="SelContaDeEnvio" class="btn btn-info"/>
+                        <select name="SelContaDeEnvio" id="SelectContaDeEnvio"></select>
+                </div>   
+                <div class="form-group">
+                        <input type="button" value="SelecionarContaDeRecebimento" id="SelContaDeRecebimento" class="btn btn-info"/>
+                        <select name="SelContaDeRecebimento" id="SelectContaDeRecebimento"></select>
+                </div>    
+                    <form id="formAdd">
+                        <div class="form-group">
+                            <label>Descrição</label>
+                            <input type="text" class="form-control" name="descricaoTransferencia" placeholder="Descrição">
+                        </div>
+                        <div class="form-group">
+                            <label>Valor</label>
+                            <input type="text" class="form-control" name="valorTransferencia" placeholder="Valor">
+                        </div>
+       
+                        <input type="button" value="Atualizar" id="btnTransferencia" class="btn btn-info"/>
+                    </form>
+
+            </div>
+            <!--</form>-->
+        
+                <!--</div>-->
+        </section>
+    </main>
+</body>
+</html>

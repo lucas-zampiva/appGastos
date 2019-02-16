@@ -1,0 +1,79 @@
+input[type=text]{
+    width: 300px;
+}
+table{
+    width: 200px;
+}
+#buscarContas{
+    width: 300px;
+    float: left;
+    position: absolute;
+}
+#addConta{
+    position: absolute;
+    left: 40%;
+    top: 0%;
+    float: left;
+    width: 320px;
+    height: 270px;
+}
+#removerConta{
+    position: absolute;
+    left: 65%;
+    top: 0%;
+    float: left;
+    width: 500px;
+    height: 270px;
+}
+#atualizarConta{
+    position: absolute;
+    top: 40%;
+    float: left;
+    width: 500px;
+    height: 270px;
+}
+#listarSaldoContas{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    float: left;
+    width: 500px;
+    height: 270px;
+}
+#buscarLancamento{
+    width: 300px;
+    float: left;
+    top: 100%;
+    position: absolute;
+}
+#addLancamento{
+    position: absolute;
+    left: 40%;
+    top: 100%;
+    float: left;
+    width: 320px;
+    height: 270px;
+}
+#removerLancamento{
+    position: absolute;
+    left: 65%;
+    top: 100%;
+    float: left;
+    width: 500px;
+    height: 270px;
+}
+#atualizarLancamento{
+    position: absolute;
+    top: 160%;
+    float: left;
+    width: 500px;
+    height: 270px;
+}
+#transferencia{
+    position: absolute;
+    top: 160%;
+    left: 40%;
+    float: left;
+    width: 500px;
+    height: 270px;
+}

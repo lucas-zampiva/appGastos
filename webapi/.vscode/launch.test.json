@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "webapi",
+                "projectName": "webapi",
+                "workingDirectory": "c:\\Users\\taine\\source\\Java\\webapi",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "webapi",
+                "projectName": "webapi",
+                "workingDirectory": "c:\\Users\\taine\\source\\Java\\webapi",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
